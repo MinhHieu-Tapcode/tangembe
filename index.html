@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Gửi Bạn Nhỏ Của Mình ❤️</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+
+  <!-- Google Fonts: Cormorant Garamond, Be Vietnam Pro & Alex Brush -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient canvas for subtle soft dreamy dust/petals -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Ambient light blobs in background -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Music floating pill toggle -->
+  <div class="audio-control-bar">
+    <button id="musicToggleBtn" class="audio-btn" aria-label="Bật/Tắt nhạc nền" title="Bật/Tắt nhạc nền du dương">
+      <span class="audio-wave">
+        <span></span><span></span><span></span><span></span>
+      </span>
+      <span class="audio-text">Nhạc nền</span>
+    </button>
+    <audio id="bgMusic" loop preload="none">
+      <!-- High quality royalty-free gentle romantic acoustic guitar & piano melody -->
+      <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-ambient-piano-112199.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <main class="main-container">
+    <!-- Header Hero -->
+    <header class="hero-section">
+      <div class="date-badge">Hôm nay &bull; Dành riêng cho bạn</div>
+      <h1 class="hero-title">Gửi bạn nhỏ khi thức giấc</h1>
+      <p class="hero-subtitle">Một chút dịu dàng gói trọn vào những dòng thư và thước phim nhỏ...</p>
+      
+      <div class="scroll-indicator">
+        <span class="scroll-line"></span>
+      </div>
+    </header>
+
+    <!-- Letter Container -->
+    <section class="letter-wrapper">
+      <article class="letter-card">
+        <div class="paper-texture"></div>
+        <div class="letter-stamp">
+          <span class="stamp-inner">Forever</span>
+        </div>
+
+        <div class="letter-header">
+          <p class="letter-date">Đêm muộn, lúc nhớ bạn nhất...</p>
+          <h2 class="letter-salutation">Hi bạn nhỏ,</h2>
+        </div>
+
+        <div class="letter-content">
+          <p class="lead-line">Bạn nhỏ ngủ rồi nhỉ =)).</p>
+          
+          <p>
+            Mình đã khóc. Mình ngồi xem lại ảnh, ảnh có bạn, có tụi mình, có những khoảnh khắc mình chụp bạn. 
+            Mình cũng hong biết nữa, từ ngày nào mình yêu bạn, nhưng từ ngày đó mình biết là mình đã thật sự dành trái tim mình cho bạn rồi.
+          </p>
+
+          <p>
+            Xong rồi mình cứ ngồi nhìn ảnh, rồi lại khóc. Mình nhớ bạn. Mình muốn có bạn, muốn được yêu bạn thật nhiều, muốn tụi mình cứ ở cạnh nhau như vậy thật lâu.
+          </p>
+
+          <p>
+            Huhu, rồi mình mới nhận ra tụi mình ít ảnh quá trời. Mình sợ sau này nếu không chụp lại, mình sẽ không còn nhớ được ngày đó tụi mình đã từng đáng yêu như thế nào.
+          </p>
+
+          <!-- Romantic Quote Highlight -->
+          <blockquote class="special-quote">
+            <span class="quote-mark">“</span>
+            <p>Nên làm ơn hãy yêu mình và ở cạnh mình 10 năm đó nha, hoặc có thể là hơn nữa vì có lẽ số mệnh đã cho mình cơ hội được gặp bạn.</p>
+          </blockquote>
+
+          <p>
+            Mình biết mình yếu lòng, nhưng cảm xúc, lý trí với con tim mình cứ như vậy thôi. Mình cũng chẳng biết phải làm sao khác nữa =)).
+          </p>
+
+          <p>
+            Tối nay mình lọc được ảnh rồi ghép thành video. Nhìn lại từng khoảnh khắc mình lại càng mong tụi mình sẽ còn mãi ở bên nhau như vậy.
+          </p>
+
+          <p>
+            Mong sau này mình vẫn có thật nhiều ảnh của tụi mình, thật nhiều ngày để nhớ, thật nhiều khoảnh khắc để cùng nhau nhìn lại và cười.
+          </p>
+        </div>
+
+        <div class="letter-footer">
+          <p class="letter-wishes">
+            Gửi tình yêu bé nhỏ của mình cho bạn, và khi bạn thức dậy mình mong bạn sẽ tiếp tục nụ cười trên môi, hạnh phúc bên người thương và chào buổi sángg ❤️
+          </p>
+          <div class="letter-sign">
+            <span class="sign-handwriting">Yêu bạn nhỏ thật nhiều</span>
+            <span class="sign-date">Mãi bên nhau nhé</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Videos / Memories Section -->
+    <section class="memories-section">
+      <div class="section-title-wrap">
+        <span class="section-sub">Thước phim lưu giữ</span>
+        <h2 class="section-title">Khoảnh Khắc Của Tụi Mình</h2>
+        <p class="section-desc">Từng giây phút bên bạn đều là điều kỳ diệu mà mình trân quý nhất.</p>
+      </div>
+
+      <div class="videos-grid">
+        <!-- Video 1 -->
+        <div class="video-card">
+          <div class="video-frame">
+            <div class="video-overlay" id="overlay1">
+              <button class="custom-play-btn" onclick="playVideo('video1', 'overlay1')" aria-label="Phát video">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+              <span class="overlay-hint">Chạm để xem cuộn phim 01</span>
+            </div>
+            <video id="video1" playsinline controls preload="metadata">
+              <source src="assets/video1.mp4" type="video/mp4">
+              Trình duyệt của bạn không hỗ trợ phát video này.
+            </video>
+          </div>
+          <div class="video-meta">
+            <span class="video-tag">Thước phim số 01</span>
+            <h3 class="video-caption">Những khoảnh khắc dịu dàng</h3>
+            <p class="video-subtext">Nhìn lại từng khoảnh khắc mình lại càng mong tụi mình sẽ còn mãi ở bên nhau.</p>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+          <div class="video-frame">
+            <div class="video-overlay" id="overlay2">
+              <button class="custom-play-btn" onclick="playVideo('video2', 'overlay2')" aria-label="Phát video">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+              <span class="overlay-hint">Chạm để xem cuộn phim 02</span>
+            </div>
+            <video id="video2" playsinline controls preload="metadata">
+              <source src="assets/video2.mp4" type="video/mp4">
+              Trình duyệt của bạn không hỗ trợ phát video này.
+            </video>
+          </div>
+          <div class="video-meta">
+            <span class="video-tag">Thước phim số 02</span>
+            <h3 class="video-caption">Từng nụ cười của bạn</h3>
+            <p class="video-subtext">Sau này sẽ cùng nhau chụp thật nhiều ảnh nữa nhé, để mãi không quên.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sweet Message Box -->
+    <section class="promise-section">
+      <div class="promise-box">
+        <h3 class="promise-heading">Lời hứa 10 năm và xa hơn thế</h3>
+        <p class="promise-text">
+          Dù năm tháng có trôi qua bao lâu, mỗi sáng thức dậy nụ cười của bạn vẫn luôn là điều ấm áp nhất đối với mình.
+        </p>
+        <div class="heart-pulse-wrap">
+          <div class="heart-pulse"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p class="footer-note">Được làm bằng tất cả sự chân thành và tình yêu</p>
+      <p class="footer-copy">&copy; Dành riêng cho Bạn Nhỏ của mình &bull; Forever & Always</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
