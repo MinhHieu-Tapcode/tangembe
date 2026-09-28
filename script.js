@@ -96,22 +96,39 @@ function initAudioPlayer() {
   const toggleBtn = document.getElementById('musicToggleBtn');
   if (!bgMusic || !toggleBtn) return;
 
-  bgMusic.volume = 0.45;
+  bgMusic.volume = 0.55;
 
-  toggleBtn.addEventListener('click', () => {
+  function startMusic() {
+    bgMusic.play().then(() => {
+      isMusicPlaying = true;
+      toggleBtn.classList.add('playing');
+    }).catch(err => {
+      console.log('Audio autoplay prevented:', err);
+    });
+  }
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
     if (bgMusic.paused) {
-      bgMusic.play().then(() => {
-        isMusicPlaying = true;
-        toggleBtn.classList.add('playing');
-      }).catch(err => {
-        console.log('Audio autoplay prevented:', err);
-      });
+      startMusic();
     } else {
       bgMusic.pause();
       isMusicPlaying = false;
       toggleBtn.classList.remove('playing');
     }
   });
+
+  // Try gentle start on first user tap/click on page
+  const handleFirstInteraction = () => {
+    if (bgMusic.paused && !isMusicPlaying) {
+      startMusic();
+    }
+    window.removeEventListener('click', handleFirstInteraction);
+    window.removeEventListener('touchstart', handleFirstInteraction);
+  };
+
+  window.addEventListener('click', handleFirstInteraction, { once: true });
+  window.addEventListener('touchstart', handleFirstInteraction, { once: true });
 }
 
 /* --------------------------------------------------------------------------
